@@ -1,9 +1,9 @@
 # Narzędzia Automatyzacji 2023
 Projekt przygotowany na potrzeby zajęć z przedmiotu Narzędzia do automatyzacji budowy oprogramowania w semestrze zimowym 2023/2024
-#### Przydatne informacje
+#### Przydatne informacje i linki
 <ul>
   <li>Składnia plików md: https://www.markdownguide.org/basic-syntax/</li>
-  <li>Instalcja Git'a: https://git-scm.com/</li>
+  <li>Instalacja Git'a: https://git-scm.com/</li>
   <li>Narzędzie TortoiseGit: https://tortoisegit.org/</li>
 </ul>
 
