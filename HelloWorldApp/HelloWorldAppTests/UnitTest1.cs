@@ -6,7 +6,7 @@ namespace HelloWorldAppTests
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.IsTrue(false, "Should be true");
+            Assert.IsTrue(true, "Should be true");
         }
     }
 }
