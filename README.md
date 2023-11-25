@@ -10,5 +10,8 @@ Projekt przygotowany na potrzeby zajęć z przedmiotu Narzędzia do automatyzacj
 #### Katalog "studenci"
 Jest to miejsce do umieszczenia plików z zadania, zgodnie z wytycznymi podanymi w czasie zajęć
 
+#### HelloWorldApp
+Przykładowa aplikacji desktopowa w C#, która będzie wykorzystywana w czasie zajęć.
+
 #### HelloWorld.bat
-Przykładowy plik programu, który będzie wykorzystywany w czasie zajęć.
+Przykładowy plik bat programu, który będzie wykorzystywany w czasie zajęć.
