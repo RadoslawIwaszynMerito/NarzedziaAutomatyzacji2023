@@ -80,7 +80,8 @@ jobs:
 
     # Execute all unit tests in the solution
     - name: Execute unit tests
-      run: .\HelloWorldApp
+      run: dotnet test
+      working-directory: .\HelloWorldApp
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
