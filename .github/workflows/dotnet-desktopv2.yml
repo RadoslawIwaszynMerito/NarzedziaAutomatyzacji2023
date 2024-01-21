@@ -87,6 +87,7 @@ jobs:
       run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
       env:
         Configuration: ${{ matrix.configuration }}
+        working-directory: .\HelloWorldApp
 
     # Decode the base 64 encoded pfx and save the Signing_Certificate
     - name: Decode the pfx
