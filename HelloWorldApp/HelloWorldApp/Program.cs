@@ -12,6 +12,7 @@ namespace HelloWorldApp
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new HelloWorldMainForm());
+            Application.Run(new HelloWorldMainForm());
         }
     }
 }
