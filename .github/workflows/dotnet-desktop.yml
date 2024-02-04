@@ -50,7 +50,8 @@ jobs:
       run: msbuild .\HelloWorldApp\$env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
       env:
         Configuration: ${{ matrix.configuration }}
-	
+	working-diretory: .\HelloWorldApp
+ 
     - name: Decode the pfx
       run: |
         $pfx_cert_byte = [System.Convert]::FromBase64String("${{ secrets.Base64_Encoded_Pfx }}")
