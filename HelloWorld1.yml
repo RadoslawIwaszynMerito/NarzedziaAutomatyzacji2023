@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest 
+
+    env:
+      Solution_Name: HelloWorldApp.sln
+      Test_Project_Path: HelloWorldAppTests/HelloWorldAppTests.csproj
+      # Wap_Project_Directory: HelloWorldApp
+      # Wap_Project_Path: HelloWorldApp/HelloWorldApp.csproj
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1
+
+      - name: Build and Test
+        run: |
+          dotnet restore ${{ env.Solution_Name }}
+          dotnet build ${{ env.Solution_Name }} -c Release
+          dotnet test ${{ env.Test_Project_Path }} -c Release
+
