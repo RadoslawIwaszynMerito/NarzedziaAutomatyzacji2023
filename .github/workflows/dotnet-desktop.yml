@@ -23,12 +23,10 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+      uses: actions/checkout@v2
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: 20
 
@@ -64,7 +62,7 @@ jobs:
       run: Remove-Item -path $env:working-directory\GitHubActionsWorkflow.pfx
 
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v2
       with:
         name: MSIX Package
         path: ${{ env.working-directory }}\AppPackages
